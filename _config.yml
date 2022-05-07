@@ -1,0 +1,9 @@
+title: "Milkshake"
+description: "A jekyll theme"
+
+base_link: '/'
+links:
+  - name: About
+    link: /about
+  - name: Blog
+    link: /blog
