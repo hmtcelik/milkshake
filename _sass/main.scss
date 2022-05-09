@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 body{
   font-family: "Poppins", Verdana, sans-serif;
   color: #333;
@@ -12,7 +14,6 @@ body{
 a{
   color: #333;
   text-decoration: none;
-
 }
 a:hover{
   color:	#F08080;
@@ -23,14 +24,31 @@ p{
   font-family: "Poppins", Verdana, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+
+//navbar
+.navbar{
+  padding: 15px;
+  background-color: $foot-nav-bg-color;
+  font-weight: bold;
+}
+.navbar-brand{
+  font-size: 22px;
+}
+.nav-item{
+  font-size: 16px;
+}
+
+//footer
 .footer{ 
-  $footer-items-color:rgb(143, 143, 143);
   margin-top: auto; 
   .wrapper{
     padding: 20px 20px;
     height: 100px;
     text-align: center;
-    background-color: #EFEFEF;
+    background-color: $foot-nav-bg-color;
   }
   .title{
     display: inline;
