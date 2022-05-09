@@ -1,10 +1,54 @@
 body{
-  font-family: "Source Code Pro", Verdana, sans-serif;
+  font-family: "Poppins", Verdana, sans-serif;
   color: #333;
   font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+  margin: 0; 
+  display:flex; 
+  flex-direction:column;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+
+}
+a:hover{
+  color:	#F08080;
+  text-decoration: underline 3px;
 }
 
 p{
   font-family: "Poppins", Verdana, sans-serif;
 }
 
+.footer{ 
+  $footer-items-color:rgb(143, 143, 143);
+  margin-top: auto; 
+  .wrapper{
+    padding: 20px 20px;
+    height: 100px;
+    text-align: center;
+    background-color: #EFEFEF;
+  }
+  .title{
+    display: inline;
+    color: $footer-items-color;
+    font-weight: 800;
+    font-size: 16px;
+    a{
+      color: #F08080;
+    }
+    a:hover{
+      color:#CD5C5C;
+    }
+  }
+  .icons{
+    margin-top: -5px;
+    a:hover{
+      color: #333;
+    }
+    font-size: 20px;
+  }
+}
