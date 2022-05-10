@@ -9,5 +9,6 @@ links:
     link: /blog
 
 configuration:
-  shows: #this is for showing sections
-    usage: 1 # this mean the usage section is enable, otherwise usage is not display (example usage: 0 )
+  display: #this is for showing sections
+    usage: true # this mean the usage section is enable 
+    index_helper: true # which of: "Go to _config.yml for changing this text"

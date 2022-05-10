@@ -15,7 +15,7 @@ title: Milkshake
             <p>
               {{site.description}}
             </p>
-            <i>
+            <i {% if site.configuration.display.index_helper ==false %} style="display: none;" {% endif %}>
               "Go to <a href="#usage">_config.yml</a> for changing this text"
             </i>
           </div>
@@ -28,7 +28,7 @@ title: Milkshake
   </section>
 
   <section id="usage">
-    <div {% if site.configuration.shows.usage == 1 %} class="usage" {% else %} class="no-usage" {% endif %}>
+    <div class="usage" {% if site.configuration.display.usage == false %} style="display:none;" {% endif %}>
       <div class="container">
         <div class="row">
           <h1>Usage</h1>
@@ -53,8 +53,9 @@ title: Milkshake
                     &nbsp;&nbsp;&nbsp;link: /blog<br>
                     <br>
                     configuration:<br>
-                    &nbsp;shows:<br>
-                    &nbsp;&nbsp;usage: 1 <br>
+                    &nbsp;display:<br>
+                    &nbsp;&nbsp;usage: true <br>
+                    &nbsp;&nbsp;index_helper: true <br>
                   </div>
                 </code>
             </div>
