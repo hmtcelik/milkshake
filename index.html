@@ -1,49 +1,76 @@
 ---
 layout: default
-title: Home
+title: Milkshake
 ---
+<div class="home-page">
 
-<div class="row">
-  <h1>Hello World</h1>
-</div>
-<div class="row">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a quam magna. In hac habitasse platea dictumst. 
-    Vivamus elit tellus, mattis blandit nulla et, lobortis interdum tellus. Donec tempus ullamcorper facilisis. Nulla 
-    tempor magna ac erat bibendum pharetra. Ut nunc urna, lobortis nec euismod non, blandit et mi. Phasellus accumsan 
-    sodales sem non vehicula.
+  <section id="index">
+    <div class="index">
+      <div class="container">
+        <div class="row">
+          <h1 class="index-header">{{site.title}}</h1>
+        </div>
+        <div class="row">
+          <div class="index-description">
+            <p>
+              {{site.description}}
+            </p>
+            <i>
+              "Go to <a href="#usage">_config.yml</a> for changing this text"
+            </i>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#usage" class="index-slide-btn-hover" ><i class="lni lni-chevron-down index-slide-btn"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    Praesent lobortis at est eu bibendum. Sed vestibulum dui eget urna feugiat, sit amet porta ex cursus. Morbi et ex 
-    vestibulum, tincidunt nisl et, ullamcorper lectus. Nam pharetra lorem metus, non pellentesque enim ornare at. Aliquam 
-    pharetra nisl sed maximus placerat. Phasellus in eleifend urna. Sed faucibus lorem cursus tempor suscipit. Integer 
-    venenatis quam quis cursus consequat. Morbi enim felis, hendrerit varius viverra dignissim, fringilla fermentum lacus. 
-    Sed consectetur viverra tellus. Nullam malesuada libero ut sollicitudin sodales. Curabitur mollis, lacus non pretium ultrices, 
-    elit turpis imperdiet lectus, lacinia fermentum libero est ac risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>  
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a quam magna. In hac habitasse platea dictumst. 
-    Vivamus elit tellus, mattis blandit nulla et, lobortis interdum tellus. Donec tempus ullamcorper facilisis. Nulla 
-    tempor magna ac erat bibendum pharetra. Ut nunc urna, lobortis nec euismod non, blandit et mi. Phasellus accumsan 
-    sodales sem non vehicula.
+  <section id="usage">
+    <div {% if site.configuration.shows.usage == 1 %} class="usage" {% else %} class="no-usage" {% endif %}>
+      <div class="container">
+        <div class="row">
+          <h1>Usage</h1>
+        </div>
+        <div class="row">
+          <div class="usage-text">
+            <p>
+              Open <strong>_config.yml</strong> file and start the change:
+            </p>
+          </div>
+            <div class="usage-code-wrapper">
+                <code>
+                  <div class="usage-codes">
+                    title: "Milkshake"<br>  
+                    description: "Simple, minimal and responsive..."<br>
+                    <br>
+                    base_link: '/'<br>
+                    links:<br>
+                    &nbsp;- name: About<br>
+                    &nbsp;&nbsp;&nbsp;link: /about<br>
+                    &nbsp;- name: Blog<br>
+                    &nbsp;&nbsp;&nbsp;link: /blog<br>
+                    <br>
+                    configuration:<br>
+                    &nbsp;shows:<br>
+                    &nbsp;&nbsp;usage: 1 <br>
+                  </div>
+                </code>
+            </div>
+          <div class="usage-text2">
+            <p>
+              Change just what you want. Example if you want to changing title on the above;<br>
+              you just change the ' <strong>title</strong> ' object.
+            </p>
+            <p>
+              (Detail help is exist in the _config.yml file)
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
-    Praesent lobortis at est eu bibendum. Sed vestibulum dui eget urna feugiat, sit amet porta ex cursus. Morbi et ex 
-    vestibulum, tincidunt nisl et, ullamcorper lectus. Nam pharetra lorem metus, non pellentesque enim ornare at. Aliquam 
-    pharetra nisl sed maximus placerat. Phasellus in eleifend urna. Sed faucibus lorem cursus tempor suscipit. Integer 
-    venenatis quam quis cursus consequat. Morbi enim felis, hendrerit varius viverra dignissim, fringilla fermentum lacus. 
-    Sed consectetur viverra tellus. Nullam malesuada libero ut sollicitudin sodales. Curabitur mollis, lacus non pretium ultrices, 
-    elit turpis imperdiet lectus, lacinia fermentum libero est ac risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a quam magna. In hac habitasse platea dictumst. 
-    Vivamus elit tellus, mattis blandit nulla et, lobortis interdum tellus. Donec tempus ullamcorper facilisis. Nulla 
-    tempor magna ac erat bibendum pharetra. Ut nunc urna, lobortis nec euismod non, blandit et mi. Phasellus accumsan 
-    sodales sem non vehicula.
-
-    Praesent lobortis at est eu bibendum. Sed vestibulum dui eget urna feugiat, sit amet porta ex cursus. Morbi et ex 
-    vestibulum, tincidunt nisl et, ullamcorper lectus. Nam pharetra lorem metus, non pellentesque enim ornare at. Aliquam 
-    pharetra nisl sed maximus placerat. Phasellus in eleifend urna. Sed faucibus lorem cursus tempor suscipit. Integer 
-    venenatis quam quis cursus consequat. Morbi enim felis, hendrerit varius viverra dignissim, fringilla fermentum lacus. 
-    Sed consectetur viverra tellus. Nullam malesuada libero ut sollicitudin sodales. Curabitur mollis, lacus non pretium ultrices, 
-    elit turpis imperdiet lectus, lacinia fermentum libero est ac risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>
 </div>

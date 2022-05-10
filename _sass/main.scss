@@ -33,35 +33,36 @@ h1, h2, h3, h4, h5, h6{
   padding: 15px;
   background-color: $foot-nav-bg-color;
   font-weight: bold;
+  &-brand{
+    font-size: 22px;
+    color: #333;
+  }
+  &-brand:hover{
+    text-decoration: none;
+  }
+  &-logo{
+    font-weight: bold;
+  }
 }
-.navbar-brand{
-  font-size: 22px;
-}
-.navbar-brand:hover{
-  text-decoration: none;
-}
-.navbar-logo{
-  font-weight: bold;
-}
+
 .nav-item{
   font-size: 16px;
+  color: #333;
 }
   
-
 //footer
 .footer{ 
   margin-top: auto; 
-  .wrapper{
+  &-wrapper{
     padding: 20px 20px;
     height: 100px;
     text-align: center;
     background-color: $foot-nav-bg-color;
   }
-  .title{
+  &-title{
     display: inline;
     color: $footer-items-color;
     font-weight: 800;
-    font-size: 16px;
     a{
       color: #F08080;
     }
@@ -69,11 +70,80 @@ h1, h2, h3, h4, h5, h6{
       color:#CD5C5C;
     }
   }
-  .icons{
-    margin-top: -5px;
+  &-icons{
+    margin-top: -8px;
     a:hover{
       color: #333;
     }
     font-size: 20px;
+  }
+}
+
+//homepage
+.home-page{
+  text-align: center;
+  .index{
+    p{
+      font-size: 18px;
+    }
+    padding-top: 130px;
+    padding-bottom: 300px;
+    &-header{
+      font-family: "Secular One", sans-serif;
+      font-weight: bold;
+      font-size: 68px;
+      margin-bottom: 20px;
+    }
+    &-slide-btn{
+      font-size: 42px;
+      font-weight: 900;
+      margin-top: 150px;
+    }
+    &-slide-btn-hover:hover{
+      color: rgb(93, 93, 93);
+    }
+  }
+
+  .usage{
+    padding-top: 90px;
+    padding-bottom: 200px;
+    &-text{
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    &-code-wrapper{
+      background-color: #f8f8f8;
+      padding: 25px;
+      border-radius: 10px;
+      height: 330px;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    @media only screen and (max-width: 550px) {
+      &-code-wrapper{
+        max-width: 400px;
+      }
+    }
+    @media only screen and (max-width: 430px) {
+      &-code-wrapper{
+        max-width: 300px;
+      }  
+    }
+    &-codes{
+      text-align: left;
+    }
+    &-text2{
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+      color: rgb(103, 103, 103);
+    }
+  }
+}
+
+.no{
+  &-usage{
+    display: none;
   }
 }

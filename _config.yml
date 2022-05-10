@@ -1,5 +1,5 @@
 title: "Milkshake"
-description: "A jekyll theme"
+description: "Simple, minimal and responsive jekyll theme for blogs or personal websites"
 
 base_link: '/'
 links:
@@ -7,3 +7,7 @@ links:
     link: /about
   - name: Blog
     link: /blog
+
+configuration:
+  shows: #this is for showing sections
+    usage: 1 # this mean the usage section is enable, otherwise usage is not display (example usage: 0 )
