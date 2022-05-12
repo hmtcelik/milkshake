@@ -21,12 +21,37 @@ title: Milkshake
           </div>
         </div>
         <div class="row">
-          <a href="#usage" class="index-slide-btn-hover" ><i class="lni lni-chevron-down index-slide-btn"></i></a>
+          <a href="#latest-posts" class="index-slide-btn-hover" ><i class="lni lni-chevron-down index-slide-btn"></i></a>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="latest-posts">
+    <div class="post-list">
+      <div class="container">
+        <div class="row">
+          <h1>Latest Posts</h1>
+        </div>
+        <div class="post">
+          <div class="container">
+            {% for post in site.posts limit:4 | reversed %}
+            <div class="row">
+              <div class="wrapper">
+                <a href="{{post.url}}">
+                  <h3>{{post.title}}</h3>
+                </a>
+                <p>{{post.excerpt | truncate: 150}}</p>
+                <p class="date">{{post.date | date: "%-d %B %Y"}}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section id="usage">
     <div class="usage" {% if site.configuration.display.usage == false %} style="display:none;" {% endif %}>
       <div class="container">
@@ -73,5 +98,4 @@ title: Milkshake
       </div>
     </div>
   </section>
-
 </div>

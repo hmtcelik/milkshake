@@ -11,6 +11,8 @@ body{
   flex-direction:column;
 }
 
+
+
 a{
   color: #333;
   text-decoration: none;
@@ -24,13 +26,20 @@ p{
   font-family: "Poppins", Verdana, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1{
   font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+h2, h3, h4, h5, h6{
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 //navbar
 .navbar{
-  padding: 15px;
+  padding: 10px;
   background-color: $foot-nav-bg-color;
   font-weight: bold;
   &-brand{
@@ -86,7 +95,7 @@ h1, h2, h3, h4, h5, h6{
     p{
       font-size: 18px;
     }
-    padding-top: 130px;
+    padding-top: 200px;
     padding-bottom: 300px;
     &-header{
       font-family: "Secular One", sans-serif;
@@ -110,10 +119,8 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .usage{
-    padding-top: 90px;
     padding-bottom: 300px;
     &-text{
-      margin-top: 5px;
       margin-bottom: 10px;
     }
     &-code-wrapper{
@@ -144,10 +151,60 @@ h1, h2, h3, h4, h5, h6{
       color: rgb(103, 103, 103);
     }
   }
+  .post-list{
+    padding-top: 130px;
+    padding-bottom: 300px;
+    .post{
+      .wrapper{
+        margin: 0 auto;
+        text-align: left;
+        max-width: 700px;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #333;
+      }
+      .date{
+        color: rgb(61, 61, 61);
+        font-size: 13px;
+      }
+    }
+    @media only screen and (max-width: 586px) {
+      
+      }
+  }
+}
+.blog{
+  text-align: center;
+  .post-list{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .post{
+      .wrapper{
+        margin: 0 auto;
+        text-align: left;
+        max-width: 700px;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #333;
+      }
+      .date{
+        color: rgb(61, 61, 61);
+        font-size: 13px;
+      }
+    }
+    @media only screen and (max-width: 586px) {
+      
+      }
+  }
 }
 
-.no{
-  &-usage{
-    display: none;
-  }
+
+.about{
+  padding: 130px 100px;
+}
+
+.blog{
+  padding:130px 100px;
 }
