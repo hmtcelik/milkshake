@@ -194,15 +194,60 @@ h2, h3, h4, h5, h6{
         font-size: 13px;
       }
     }
-    @media only screen and (max-width: 586px) {
-      
-      }
   }
 }
 
 
 .about{
-  padding: 130px 100px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  text-align: center;
+  .container{
+    margin-top: -20px;
+    display: flex;
+    max-width: 1000px;
+  }
+  .header-wrapper{
+    float: left;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .text-wrapper{
+    float: right;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    min-height: 300px;
+  }
+  .pp{
+    width: 180px;
+    border-radius: 50%;
+  }
+  .text{
+    margin-top: 10px;
+  }
+  .links{
+    margin-top: 30px;
+    font-size: 20px;
+    .item{
+      padding: 3px;
+    }
+  }
+  @media only screen and (max-width: 866px) {
+    .container{
+      display: block;
+    }
+    .header-wrapper{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .text-wrapper{
+      width: 100%;
+      margin: 0 auto;
+    }
+  } // end media
 }
 
 .blog{
