@@ -112,9 +112,17 @@ h2, h3, h4, h5, h6{
       font-size: 42px;
       font-weight: 900;
       margin-top: 150px;
+
     }
     &-slide-btn-hover:hover{
-      color: rgb(93, 93, 93);
+      margin-top: 3px;
+      transition: margin-top 0.2s ease-in;
+      color: rgb(0, 0, 0);
+    }
+    &-slide-btn-hover:not(:hover){
+      transition: margin-top 0.2s;
+      transition-timing-function: ease-out;
+      margin-top: 0px;
     }
   }
 
