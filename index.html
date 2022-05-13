@@ -35,7 +35,7 @@ title: Milkshake
         </div>
         <div class="post">
           <div class="container">
-            {% for post in site.posts limit:4 reversed %}
+            {% for post in site.posts | limit:4 reversed %}
             <div class="row">
               <div class="wrapper">
                 <a href="{{post.url}}">

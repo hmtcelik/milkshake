@@ -2,9 +2,20 @@
 layout: default
 ---
 <div class="post-template">
-  <h1>{{ page.title }}</h1>
-
-  <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-  {{ content }}
+  <div class="container">
+    <div class="colon col-md-10 col-lg-8 col-xl-8">
+      <div class="row">
+        <div class="titlee">
+          <h1><div class="title">{{ page.title }}</div></h1>
+        </div>
+      </div>
+      <div class="row">
+        <img src="{{page.image}}" class="img" alt="post-image">
+      </div>
+      <div class="row text">
+        {{ content }}    
+        <p class="date">{{ page.date | date_to_string }} - {{ page.author }}</p>
+      </div>
+    </div>
+  </div>
 </div>
