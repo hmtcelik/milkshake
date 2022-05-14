@@ -1,3 +1,9 @@
+# for creating post:
+# - 1) just go to _post folder and creating md file (like default) -be sure its name is look like defaults-
+# - 2) fill the objects which of top of the page
+# - 3) just writing something
+# thats it!
+
 title: "Milkshake"
 description: "Simple, minimal and responsive jekyll theme for blogs or personal websites"
 
@@ -11,4 +17,10 @@ links:
 configuration:
   display: #this is for showing sections
     usage: true # this mean the usage section is enable 
-    index_helper: true # which of: "Go to _config.yml for changing this text"
+    index_helper: true # which of: "Go to _config.yml for..."
+
+social_links:
+  github: "https://github.com/hmtcelik"
+  twitter: "https://www.twitter.com/"
+  facebook: https://www.facebook.com/
+  instagram: "https://www.instagram.com/"
