@@ -24,3 +24,9 @@ social_links:
   twitter: "https://www.twitter.com/"
   facebook: https://www.facebook.com/
   instagram: "https://www.instagram.com/"
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
