@@ -9,6 +9,7 @@ description: "Simple, minimal and responsive jekyll theme for blogs or personal 
 baseurl: /milkshake
 url: "https://hmtcelik.github.io/"
 
+
 # for navigation
 links:
   - name: About
